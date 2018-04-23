@@ -1,0 +1,5 @@
+org/halx/janus/configuration/WebSecurityConfig.class
+org/halx/janus/controller/homeController.class
+org/halx/janus/model/SplashPageModel.class
+org/halx/janus/controller/JanusWebApp.class
+org/halx/janus/configuration/MvcConfig.class

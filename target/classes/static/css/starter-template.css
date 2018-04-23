@@ -1,0 +1,18 @@
+body {
+ 
+}
+.centered {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+.menuItem {
+	position : relative;
+	display : block;
+	padding: 15px 10px 15px 10px;
+	text-decoration : none;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	color: #fff;
+	background-color: #080808;
+	border : none;
+}

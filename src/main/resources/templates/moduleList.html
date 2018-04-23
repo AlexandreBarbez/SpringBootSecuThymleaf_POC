@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head th:replace="fragments/header :: head"></head>
+<body>
+	<div th:replace="fragments/navbar :: navbar"></div>
+
+	<div class="container">
+		<div class="starter-template">
+			<p th:inline="text">You are logged as [[${#httpServletRequest.remoteUser}]]</p>
+			<p>It is actually </p>
+			<ul>
+				<li>module 1</li>
+				<li>module 2</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /.container -->
+	<div th:replace="fragments/footer :: footer"></div>
+
+</body>
+</html>
+

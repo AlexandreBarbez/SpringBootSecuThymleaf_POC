@@ -1,0 +1,19 @@
+version: "3"
+
+networks:
+  default:
+    external:
+      name: nginx_netci
+
+services:
+  janus:
+    image: halx/janus
+    container_name: janus
+    restart: always
+    environment:
+      - VIRTUAL_HOST=janus.alexandrebarbez.com
+      - VIRTUAL_PORT=8080
+    volumes:
+      - ./target/janus.jar:/app.jar
+    expose:
+      - 8080
